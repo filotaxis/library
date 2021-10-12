@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="htt5ps://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="content">
+
+        <aside class="flex flex-col">
+            <div class="library-logo">
+                <img src="images/local_library_black_24dp.svg" alt="library logo">
+                <h2>Library</h2>
+            </div>
+                
+            <form id="inputs">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+                
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author">
+                
+                <label for="num-pag">Pages</label>
+                <input type="text" id="num-pag" name="num-pag">
+                
+                <label for="status">Status</label>
+                <input type="checkbox" name="status" id="status">
+                
+                <input type="submit" value="Add a new book">
+            </form>
+        </aside>
+        
+        <section>
+            <h1>Books</h1>
+            <div class="books-container"></div>
+        </section>
+    </div>
+        
+    <footer>
+        <p>Made with 🧡 by <a href="">Bryan</a> | <a href="">Source Code</a></p>
+    </footer>
+</body>
+</html>

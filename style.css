@@ -1,0 +1,86 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: nunito, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    /* background-color: #84a59d; */
+    background-color: #403d39;
+
+    flex: 1;
+    padding: 2rem;
+}
+
+section {
+    background-color: #f7ede2;
+    background-color: #ccc5b9;
+    flex: 3;
+    padding: 0 2rem 2rem 2rem;
+}
+
+section>h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.library-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 0.2rem;
+    color: #eb5e28;
+}
+
+.library-logo>img {
+    background: #eb5e28;
+    height: 3rem;
+}
+
+aside>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.card {
+    text-align: center;
+    /* background-color: #84a59d; */
+    background-color: #403d39;
+    color: #f7ede2;
+    /* border: 3px solid #f6bd60; */
+    border-radius: 1rem;
+}
+
+.card>h4 {
+    /* color: #9d4edd; */
+    font-size: 2rem;
+    /* color: #f28482; */
+}
+
+.card>p {
+    color: #fffcf2;
+}
