@@ -21,6 +21,7 @@ function addBookToLibrary(e) {
     const newBook = new Book(title, author, numPag, status);
     myLibrary.push(newBook);
     displayBooks();
+    inputs.reset();
 }
 
 function deleteBookFromLibrary(id) {
@@ -33,6 +34,7 @@ function togggleBookStatus(book) {
     displayBooks();
 }
 function createCard(book, id) {
+    
     const card = document.createElement("div");
     const title = document.createElement("h4");
     const author = document.createElement("p");
@@ -44,7 +46,8 @@ function createCard(book, id) {
     title.textContent = book.name.toUpperCase();
     author.textContent = `by ${book.author}`;
     numPag.textContent = `${book.numPag} pages`;
-    status.textContent = book.status ? "read" :  "not read";
+    status.textContent = book.status ? "💚 read" : "💔 not read";
+    status.style.backgroundColor = book.status ? "#fca311" : "#e56b6f";
     deleteBook.textContent = "✕";
 
     buttonSpace.classList.add("close");
@@ -59,7 +62,6 @@ function createCard(book, id) {
     card.appendChild(author);
     card.appendChild(numPag);
     card.appendChild(status);
-
     booksContainer.appendChild(card);
 }
 

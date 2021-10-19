@@ -20,16 +20,13 @@ body {
 }
 
 aside {
-    /* background-color: #84a59d; */
     background-color: #403d39;
-
     flex: 1;
     padding: 2rem;
 }
 
 section {
-    background-color: #f7ede2;
-    background-color: #ccc5b9;
+    background-color: #d1ceb4;
     flex: 3;
     padding: 0 2rem 2rem 2rem;
 }
@@ -45,11 +42,11 @@ section>h1 {
     align-items: center;
     font-size: 2rem;
     gap: 0.2rem;
-    color: #eb5e28;
+    color: #fca311;
 }
 
 .library-logo>img {
-    background: #eb5e28;
+    background: #fca311;
     height: 3rem;
 }
 
@@ -57,22 +54,45 @@ aside>form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fca311;
+    margin: 2rem;
 }
+
+aside>form>input {
+    background-color: #d1ceb4;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem 0;
+    border: none;
+}
+
+aside>form>#submit {
+    border: none;
+    background-color: #fca311;
+    margin: 1.5rem 0;
+}
+
 
 .books-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 1rem;
     grid-auto-rows: minmax(100px, auto);
 }
 
+
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    /* background-color: #84a59d; */
     background-color: #403d39;
     color: #f7ede2;
-    /* border: 3px solid #f6bd60; */
     border-radius: 1rem;
+    height: 22rem;
+    padding: 1rem;
 }
 
 .close {
@@ -84,21 +104,38 @@ aside>form {
 .close>button {
     border: none;
     font-size: 2rem;
+    font-weight: 700;
     padding: 0;
-    margin: 0.5rem 1rem;
     background-color: #403d39;
     color: #f7ede2;
 }
 
 .close>button:hover {
-    color: #fca311;
+    color: #e56b6f;
 }
+
 
 .card>h4 {
     font-size: 2rem;
-    margin: 0;
+    margin: 0 0.5rem;
+    height: 4rem;
+    color: #fca311;
 }
 
 .card>p {
     color: #fffcf2;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.card>button {
+    border: none;
+    border-radius: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fca311;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    color: #353535;
+    font-weight: 700;
 }
