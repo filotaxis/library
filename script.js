@@ -1,5 +1,6 @@
 const inputs = document.querySelector("#inputs");
 const booksContainer = document.querySelector(".books-container");
+const storage = window.localStorage;
 let myLibrary = [];
 
 function Book(name, author, numPag, status) {
@@ -95,3 +96,5 @@ myLibrary.push(bryan);
 myLibrary.push(eve);
 myLibrary.push(zelda);
 displayBooks();
+// localStorage.setItem("human", "bryan");
+// const human = loc
