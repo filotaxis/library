@@ -139,3 +139,19 @@ aside>form>#submit {
     color: #353535;
     font-weight: 700;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fca311;
+    background-color: #353535;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+footer>p>a{
+    text-decoration: none;
+    color: #e56b6f;
+}
